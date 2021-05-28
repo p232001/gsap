@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#bck {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px;
+}
+
+#bck nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #links a {
+    display: inline-block;
+    margin-left: 160px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    /* text-transform: capitalize; */
+}
+
+nav #links a:nth-child(1) {
+    margin-left: 0px;
+}
+
+#icons i {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#icons i:nth-child(1) {
+    margin-left: 0px;
+}
+
+#main {
+    width: 80%;
+    height: 70%;
+    /* background-color: rgb(228, 228, 228); */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#main #img {
+    width: 100%;
+    height: 94%;
+    background-color: chartreuse;
+    background-image: url(https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+#footer {
+    position: absolute;
+    bottom: 30px;
+    width: 95%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000000; */
+    color: black;
+}
+
+#footer i {
+    margin-right: 30px;
+    display: inline-block;
+}
+
+#overlay {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    animation: anim 1.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+@keyframes anim {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
